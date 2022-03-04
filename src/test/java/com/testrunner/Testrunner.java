@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		junit= "--step-notifications",
-		plugin = {"json:target/cucumber.json"},
+		//plugin = {"json:target/cucumber.json"},
+	        plugin = {"json:target/cucumber.json"},
 		features="Feature99",
 		glue={"step_definition"}
 		,tags={"@succesful_login"}
